@@ -1,0 +1,279 @@
+/* 文字素材 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?sq2ufw');
+    src: url('../fonts/icomoon.eot?sq2ufw#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?sq2ufw') format('truetype'),
+        url('../fonts/icomoon.woff?sq2ufw') format('woff'),
+        url('../fonts/icomoon.svg?sq2ufw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 动画 */
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes big {
+    to {
+        transform: scale(1.1);
+
+    }
+}
+
+img:hover {
+    cursor: pointer
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.style_red {
+    color: red;
+}
+
+.style_strong {
+    font-weight: 700;
+    color: #000;
+
+}
+
+.shortcut {
+    height: 40px;
+    background-color: #f1f1f1;
+    line-height: 40px;
+}
+
+.shortcut .fl {
+    float: left;
+}
+
+.shortcut ul li {
+    float: left;
+
+}
+
+.fl ul li a {
+    font-size: 14px;
+    padding-right: 28px;
+
+
+}
+
+.shortcut .fr {
+    float: right;
+}
+
+
+.fr ul li a {
+    font-size: 14px;
+    padding-left: 28px;
+}
+
+/* header模块 */
+
+.header {
+    position: relative;
+    height: 106px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    width: 252px;
+    height: 106px;
+
+}
+
+.logo a {
+    display: block;
+    background: url(../image/logo01_1.png) no-repeat;
+    background-size: 200px 90px;
+    width: 252px;
+    height: 106px;
+    font-size: 0;
+}
+
+.search {
+    position: absolute;
+    overflow: hidden;
+    left: 346px;
+    top: 35px;
+    width: 400px;
+    height: 40px;
+    border: 2px solid #cb0001;
+}
+
+.search input {
+    float: left;
+    padding-left: 5px;
+    width: 340px;
+    height: 40px;
+
+}
+
+.search button {
+    float: left;
+    width: 56px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #cb0001;
+
+}
+
+.service {
+    position: absolute;
+    left: 960px;
+    top: 35px;
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    /* background-color: #cb0001; */
+}
+
+.service i {
+    font-family: 'icomoon';
+    font-size: 20px;
+    color: #2e201d;
+    padding-left: 16px;
+}
+
+.service i span {
+    font-size: 14px;
+    color: #666666;
+}
+
+.service span:hover {
+    color: #cb0001;
+}
+
+/* nav模块 */
+.nav {
+    padding: relative;
+    height: 72px;
+    margin-bottom: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* background-color: pink; */
+}
+
+.nav ul {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 72px;
+    padding: 9px 11px;
+    /* background-color: skyblue */
+}
+
+.nav ul:nth-child(-n+4):after {
+    position: absolute;
+    right: 3px;
+    bottom: 15px;
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: #ccc;
+}
+
+.nav ul li {
+    float: left;
+    font-size: 16px;
+}
+
+.nav ul li a {
+    padding: 0 10px;
+}
+
+.denlon .lf {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -760px;
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    background: url(../image/CN_files/lf.png);
+    background-size: 100% 100%;
+}
+
+
+.denlon .lr {
+    position: fixed;
+    top: 0;
+    right: 50%;
+    margin-right: -768px;
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    background: url(../image/CN_files/lr01.png);
+    background-size: 100% 100%;
+}
+
+.bt {
+    position: fixed;
+    top: 50%;
+    margin-top: 50px;
+    left: 50%;
+    margin-left: -670px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s
+}
+
+/* .bt:hover {
+    opacity: 1;
+} */
+
+.bt ul li {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #f5f3f2;
+}
+
+.bt ul li a {
+    font-size: 12px;
+    color: #000;
+    padding: 10px 8px;
+}
+
+/* .bt ul li:hover {
+    background-color: #fff7f0;
+}
+
+.bt ul li:hover a {
+    color: #f49bb7;
+} */
+.btn .active {
+    color: #f49bb7;
+}
+
+/* footer模块 */
+.footer {
+    height: 125px;
+    margin-top: 15px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+
+}
+
+.copyright {
+    height: 125px;
+    padding-top: 50px;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+
+
+}
